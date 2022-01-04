@@ -1,6 +1,6 @@
 body{
     margin:0;
-    background-color: rgb(252, 216, 170);
+    background-color: rgb(248, 227, 200);
 }
 
 a{
@@ -13,8 +13,81 @@ a{
     justify-content: space-between;
     align-items: center;
     background-color: #263343;
-    padding: 8px 12px
+    padding: 8px 13px
 }
 .site-name{
     color:#d37c3e
+}
+.menu{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+.menu li{
+    padding: 10px 20px;
+}
+.menu li:hover{
+    background-color:  #d37c3e;
+    border-radius: 5px;
+}
+.language{
+    display: flex;
+    list-style: none;
+}
+
+.language li{
+    padding: 10px;
+}
+.language li:hover{
+    background-color:  #d37c3e;
+    border-radius: 5px;
+}
+/*hello*/
+h1{
+    padding: 90px;
+    text-align-last: center;
+    -webkit-text-stroke-width: 0.6px;
+	-webkit-text-stroke-color: black;
+    line-height: 165%;
+}
+.highlight-type1:hover{
+    background-color: rgb(137, 221, 247);
+}
+.highlight-type2:hover{
+    background-color: greenyellow;
+}
+.highlight-type3:hover{   
+    background-color: yellow;
+}
+.highlight-type4{
+    background-color: tomato;
+}
+.highlight-type4:hover{
+    background-color: rgb(248, 227, 200);
+    color:tomato;
+    font-size: 40px;
+}
+
+/*화면 크기 작아진 경우*/
+@media screen and (max-width:715px){
+    .top-banner{
+        flex-direction: column;
+        align-items:flex-start;
+    }
+    .menu{
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .menu li:hover{
+        width:80%;
+        text-align:center;
+    }
+    .language{
+        padding: 0px;
+        flex-direction:row-reverse;
+        width: 100%;
+    }
+
 }
