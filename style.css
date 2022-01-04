@@ -89,5 +89,11 @@ h1{
         flex-direction:row-reverse;
         width: 100%;
     }
+    .fontawesome{
+        position:absolute;
+
+    }
 
 }
+
+/*aboutme*/ 
